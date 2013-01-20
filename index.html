@@ -75,7 +75,7 @@
       </div>
 
 
-      <p>Click on the team name below the chart to show/hide the graph. Hover to reveal the stats. <img src="assets/img/superbowl.png" style="vertical-align:baseline;"/> means won Superbowl that year.</p>
+      <p>Click on the team name below the chart to show/hide the graph. Hover to reveal the stats. <img src="assets/img/superbowl.png" style="vertical-align:baseline;"/> means won Super Bowl that year.</p>
 
       <div id="container" style="min-width: 400px; height: 700px; margin: 0 auto"></div>
 
@@ -83,7 +83,7 @@
       <hr>
 
       <footer>
-        <p>By <a href="http://about.me/daigofujiwara">Daigo Fujiwara</a>, 2013. Using <a href="http://www.highcharts.com/">highcharts.js</a>, <a href="http://jquery.com/">jquery</a>, <a href="http://twitter.github.com/bootstrap/">bootstrap</a>. </p>
+        <p>By <a href="http://about.me/daigofujiwara">Daigo Fujiwara</a>, 2013. Using <a href="http://www.highcharts.com/">highcharts.js</a>, <a href="http://jquery.com/">jquery</a>, <a href="http://twitter.github.com/bootstrap/">bootstrap</a>. Source: <a href="http://www.nfl.com/stats/categorystats?archive=false&conference=null&role=TM&offensiveStatisticCategory=GAME_STATS&defensiveStatisticCategory=null&season=2012&seasonType=REG&tabSeq=2&qualified=false&Submit=Go">NFL.com></a></p>
       </footer>
 
     </div> <!-- /container -->
@@ -112,10 +112,13 @@ $(function () {
                 type: 'spline'
             },
             title: {
-                text: 'Regular season points per game  - offense'
+                text: 'Regular season points scored per game  - offense'
             },
             subtitle: {
-                text: 'Source: NFL.com'
+                text: ''
+            },
+            credits: {
+                enabled: false
             },
             xAxis: {
                 categories: ['2002', '2003', '2004', '2005', '2006', '2007', '2008', '2009', '2010', '2011', '2012']
@@ -132,7 +135,9 @@ $(function () {
             },
             tooltip: {
                 crosshairs: false,
-                shared: false
+                shared: false,
+                valuePrefix: 'scored ',
+                valueSuffix: ' pts/game'
             },
             plotOptions: {
                 spline: {

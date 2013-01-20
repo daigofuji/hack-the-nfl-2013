@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -10,12 +9,21 @@
 
     <!-- Le styles -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <style type="text/css">
       body {
+        font-family: 'Open Sans', sans-serif;
         padding-top: 60px;
         padding-bottom: 40px;
       }
+      .hero-unit {font-size:16px;line-height: 24px; padding: 25px 40px; text-shadow: 0px 1px 1px #fff;}
+      .hero-unit h1 {margin-bottom:25px;
+        font-size: 50px;
+        letter-spacing: 0px;
+        line-height: 50px;
+        }
       hr {margin-bottom:50px;}
+      .top3 {font-weight:bold; color:#c00;}
     </style>
     <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
 
@@ -27,7 +35,7 @@
   
   </head>
 
-  <body>
+  <body id="home">
 
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
@@ -37,12 +45,14 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-          <a class="brand" href="#">Hack the Pats 2013</a>
+          <a class="brand" href="#home"　class="anchorLink">Hack the Pats 2013</a>
           <div class="nav-collapse collapse">
             <ul class="nav">
               <!-- <li class="active"><a href="#">Home</a></li> -->
               <li><a href="#offense" class="anchorLink">Offense stats</a></li>
               <li><a href="#defense" class="anchorLink">Defense stats</a></li>
+              <li><a href="#sbwinners" class="anchorLink">Super Bowl winners</a></li>
+              <li> <a href="https://github.com/daigofuji/hack-the-nfl-2013">GitHub</a></li>
               <!-- <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
                 <ul class="dropdown-menu">
@@ -56,6 +66,7 @@
                 </ul>
               </li>-->
             </ul>
+
             <!--<form class="navbar-form pull-right">
               <input class="span2" type="text" placeholder="Email">
               <input class="span2" type="password" placeholder="Password">
@@ -70,9 +81,9 @@
 
       <!-- Main hero unit for a primary marketing message or call to action -->
       <div class="hero-unit">
-        <h1>Regular season team stats &amp; winning the Super Bowl</h1>
-        <p>Is there a relationship between having good regular season stats (<a href="#offense" class="anchorLink">points scored per game</a>, and <a href="#defense" class="anchorLink">points allowed per game</a>) and winning a championship? Here is a look at numbers since the NFL expansion in 2002.</p>
-        <p>A project for <a href="http://meetupbos.hackshackers.com/events/98369922/">Hack the Pats Hack-a-thon</a> on Saturday, January 19, 2013 at Boston Globe lab by Daigo Fujiwara.  Part of <a href="http://meetupbos.hackshackers.com/">Hacks Hackers Boston</a>. Data taken from <a href="http://www.nfl.com/stats/categorystats?archive=false&conference=null&role=TM&offensiveStatisticCategory=GAME_STATS&defensiveStatisticCategory=null&season=2012&seasonType=REG&tabSeq=2&qualified=false&Submit=Go">NFL.com</a> and uploaded <a href="https://docs.google.com/spreadsheet/ccc?key=0Apvvlouo3eMgdG9Hd3pIdk5sZHhLdlRidTdoVkROSFE">here in Google Doc</a>. See it on <a href="https://github.com/daigofuji/hack-the-nfl-2013">Github</a>. Lives on the web at <a href="http://daigofujiwara.com/nfl/">daigofujiwara.com/nfl</a> </p>
+        <h1>Regular season NFL team stats &amp; winning the Super Bowl</h1>
+        <p>Is there a relationship between having good regular season stats (<a href="#offense" class="anchorLink">points scored per game</a> and <a href="#defense" class="anchorLink">points allowed per game</a>) and winning <a href="#sbwinners" class="anchorLink">a championship</a>? Here is a look at the numbers since the NFL expansion/realignment in 2002.</p>
+        <p>A project for <a href="http://meetupbos.hackshackers.com/events/98369922/">Hack the Pats Hack-a-thon</a> on Saturday, January 19, 2013 at The Boston Globe lab by Daigo Fujiwara.  Part of <a href="http://meetupbos.hackshackers.com/">Hacks Hackers Boston</a>. Data taken from <a href="http://www.nfl.com/stats/categorystats?archive=false&conference=null&role=TM&offensiveStatisticCategory=GAME_STATS&defensiveStatisticCategory=null&season=2012&seasonType=REG&tabSeq=2&qualified=false&Submit=Go">NFL.com</a> and uploaded <a href="https://docs.google.com/spreadsheet/ccc?key=0Apvvlouo3eMgdG9Hd3pIdk5sZHhLdlRidTdoVkROSFE">here in Google Doc</a>. See it on <a href="https://github.com/daigofuji/hack-the-nfl-2013">GitHub</a>. Lives on the web at <a href="http://daigofujiwara.com/nfl/">daigofujiwara.com/nfl</a> </p>
         <!--<p><a class="btn btn-primary btn-large">Learn more &raquo;</a></p> -->
       </div>
 
@@ -94,23 +105,111 @@
       <div id="container2" style="min-width: 400px; height: 700px; margin: 0 auto"></div>
 
 
-        <hr>
+        <hr id="sbwinners">
 
-        <h2>List of Super Bowl winners</h2>
+        <h2>List of Super Bowl winners and how they ranked</h2>
         <p>In the span:</p>
-        <ul>
-            <li>XXXVII  January 26, 2003    <strong>Tampa Bay Buccaneers</strong>   48–21   Oakland Raiders</li>
-            <li>XXXVIII February 1, 2004    <strong>New England Patriots</strong>   32–29   Carolina Panthers</li>
-            <li>XXXIX   February 6, 2005    <strong>New England Patriots</strong>   24–21   Philadelphia Eagles</li>
-            <li>XL  February 5, 2006    <strong>Pittsburgh Steelers</strong>    21–10   Seattle Seahawks</li>
-            <li>XLI February 4, 2007    <strong>Indianapolis Colts</strong> 29–17   Chicago Bears</li>
-            <li>XLII    February 3, 2008    <strong>New York Giants</strong>    17–14   New England Patriots</li>
-            <li>XLIII   February 1, 2009    <strong>Pittsburgh Steelers</strong> 27–23  Arizona Cardinals</li>
-            <li>XLIV    February 7, 2010    <strong>New Orleans Saints</strong> 31–17   Indianapolis Colts</li>
-            <li>XLV February 6, 2011    <strong>Green Bay Packers</strong>  31–25   Pittsburgh Steelers</li>
-            <li>XLVI    February 5, 2012    <strong>New York Giants</strong>    21–17   New England Patriots</li>
-            <li>XLVII   February 3, 2013    <strong>?</strong> at Mercedes-Benz Superdome, New Orleans, Louisiana</li>
-        </ul>
+
+
+        <table border="0" cellpadding="0" cellspacing="0" class="table table-striped">
+         <tbody><tr>
+          <th>SB</th>
+          <th>Date</th>
+          <th>Winner</th>
+          <th>Score</th>
+          <th>Offense</th>
+          <th>Defense</th>
+         </tr>
+         <tr>
+          <td>XXXVII</td>
+          <td>January 26, 2003</td>
+          <td><strong>Tampa Bay Buccaneers</strong></td>
+          <td>48–21 vs Oakland Raiders</td>
+          <td>18th</td>
+          <td class="top3">1st</td>
+         </tr>
+         <tr>
+          <td>XXXVIII</td>
+          <td>February 1, 2004</td>
+          <td><strong>New England Patriots</strong></td>
+          <td>32–29 vs Carolina Panthers</td>
+          <td>12th</td>
+          <td class="top3">1st</td>
+         </tr>
+         <tr>
+          <td>XXXIX</td>
+          <td>February 6, 2005</td>
+          <td><strong>New England Patriots</strong></td>
+          <td>24–21 vs Philadelphia Eagles</td>
+          <td>4th</td>
+          <td class="top3">2nd</td>
+         </tr>
+         <tr>
+          <td>XL</td>
+          <td>February 5, 2006</td>
+          <td><strong>Pittsburgh Steelers</strong></td>
+          <td>21–10 vs Seattle Seahawks</td>
+          <td>9th</td>
+          <td class="top3">3rd</td>
+         </tr>
+         <tr>
+          <td>XLI</td>
+          <td>February 4, 2007</td>
+          <td><strong>Indianapolis Colts</strong></td>
+          <td>29–17 vs Chicago Bears</td>
+          <td class="top3">2nd</td>
+          <td>23rd</td>
+         </tr>
+         <tr>
+          <td>XLII</td>
+          <td>February 3, 2008</td>
+          <td><strong>New York Giants</strong></td>
+          <td>17–14 vs New England Patriots</td>
+          <td>14th</td>
+          <td>17th</td>
+         </tr>
+         <tr>
+          <td>XLIII</td>
+          <td>February 1, 2009</td>
+          <td><strong>Pittsburgh Steelers</strong></td>
+          <td>27–23 vs Arizona Cardinals</td>
+          <td>20th</td>
+          <td class="top3">1st</td>
+         </tr>
+         <tr>
+          <td>XLIV</td>
+          <td>February 7, 2010</td>
+          <td><strong>New Orleans Saints</strong></td>
+          <td>31–17 vs Indianapolis Colts</td>
+          <td class="top3">1st</td>
+          <td>20th</td>
+         </tr>
+         <tr>
+          <td>XLV</td>
+          <td>February 6, 2011</td>
+          <td><strong>Green Bay Packers</strong></td>
+          <td>31–25 vs Pittsburgh Steelers</td>
+          <td>10th</td>
+          <td class="top3">2nd</td>
+         </tr>
+         <tr>
+          <td>XLVI</td>
+          <td>February 5, 2012</td>
+          <td><strong>New York Giants</strong></td>
+          <td>21–17 vs New England Patriots</td>
+          <td>9th</td>
+          <td>25th</td>
+         </tr>
+         <tr>
+          <td>XLVII</td>
+          <td>February 3, 2013</td>
+          <td><strong>?</strong></td>
+          <td>at New Orleans, Louisiana</td>
+          <td></td>
+          <td></td>
+         </tr>
+        </tbody></table>
+
 
       <hr>
       <footer>
@@ -126,8 +225,8 @@
 
     <script src="assets/js/bootstrap.min.js"></script>
 
-    <script src="http://code.highcharts.com/highcharts.js"></script>
-    <script src="http://code.highcharts.com/modules/exporting.js"></script>
+    <script src="assets/js/highcharts.js"></script>
+    <script src="assets/js/exporting.js"></script>
 
 
 <script type="text/javascript">
@@ -152,7 +251,7 @@ $(function () {
                 enabled: false
             },
             colors: [
-                '#8DD3C7', '#FFFFB3', '#BEBADA', '#FB8072', '#80B1D3', '#FDB462', '#B3DE69', '#FCCDE5', '#D9D9D9', '#BC80BD', '#CCEBC5', '#FFED6F','#8DD3C7', '#FFFFB3', '#BEBADA', '#FB8072', '#80B1D3', '#FDB462', '#cc0000', '#B3DE69', '#FCCDE5', '#D9D9D9', '#BC80BD', '#CCEBC5', '#FFED6F','#8DD3C7', '#FFFFB3', '#BEBADA', '#FB8072', '#80B1D3', '#FDB462','#B3DE69', '#FCCDE5', '#D9D9D9', '#BC80BD', '#CCEBC5', '#FFED6F'
+                '#8DD3C7', '#dfe32d', '#AEBADA', '#FB8072', '#80B1D3', '#FDB462', '#B3DE69', '#FCCDE5', '#D9D9D9', '#BC80BD', '#CCEBC5', '#FFED6F','#8DD3C7', '#dfe32d', '#BEBADA', '#FB8072', '#80B1D3', '#FDB462', '#cc0000', '#B3DE69', '#FCCDE5', '#D9D9D9', '#BC80BD', '#CCEBC5', '#FFED6F','#8DD3C7', '#dfe32d', '#BEBADA', '#FB8072', '#80B1D3', '#FDB462','#B3DE69', '#FCCDE5', '#D9D9D9', '#BC80BD', '#CCEBC5', '#FFED6F'
             ],
             xAxis: {
                 categories: ['2002', '2003', '2004', '2005', '2006', '2007', '2008', '2009', '2010', '2011', '2012']
@@ -452,7 +551,7 @@ $(function () {
                 enabled: false
             },
             colors: [
-                '#8DD3C7', '#FFFFB3', '#BEBADA', '#FB8072', '#80B1D3', '#FDB462', '#B3DE69', '#FCCDE5', '#D9D9D9', '#BC80BD', '#CCEBC5', '#FFED6F','#8DD3C7', '#FFFFB3', '#BEBADA', '#FB8072', '#80B1D3', '#FDB462', '#cc0000', '#B3DE69', '#FCCDE5', '#D9D9D9', '#BC80BD', '#CCEBC5', '#FFED6F','#8DD3C7', '#FFFFB3', '#BEBADA', '#FB8072', '#80B1D3', '#FDB462','#B3DE69', '#FCCDE5', '#D9D9D9', '#BC80BD', '#CCEBC5', '#FFED6F'
+                '#8DD3C7', '#dfe32d', '#AEBADA', '#FB8072', '#80B1D3', '#FDB462', '#B3DE69', '#FCCDE5', '#D9D9D9', '#BC80BD', '#CCEBC5', '#FFED6F','#8DD3C7', '#dfe32d', '#BEBADA', '#FB8072', '#80B1D3', '#FDB462', '#cc0000', '#B3DE69', '#FCCDE5', '#D9D9D9', '#BC80BD', '#CCEBC5', '#FFED6F','#8DD3C7', '#dfe32d', '#BEBADA', '#FB8072', '#80B1D3', '#FDB462','#B3DE69', '#FCCDE5', '#D9D9D9', '#BC80BD', '#CCEBC5', '#FFED6F'
             ],
             xAxis: {
                 categories: ['2002', '2003', '2004', '2005', '2006', '2007', '2008', '2009', '2010', '2011', '2012']

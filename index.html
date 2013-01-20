@@ -78,7 +78,7 @@
 
       <hr id="offense">
       <h2>Does offense win championship?</h2>
-      <p>Charting <strong>how many points a team averaged</strong> in their 16 game regular season. <img src="assets/img/superbowl.png" style="vertical-align:baseline;"/> means the team won Super Bowl. Click on the team name below the chart to show/hide. Hover to show the points allowed. </p>
+      <p>Charting <strong>how many points a team averaged</strong> in their 16 game regular season. <img src="assets/img/superbowl.png" style="vertical-align:baseline;"/> means the team won Super Bowl. Click on the team name below the chart (in the legend) to show/hide. Hover to show the average points scored. </p>
 
       <div id="container" style="min-width: 400px; height: 700px; margin: 0 auto"></div>
 
@@ -89,12 +89,28 @@
 
       <hr id="defense">
       <h2>What about defense?</h2>
-      <p>Charting <strong>how many points the team allowed</strong> in each game. <img src="assets/img/superbowl.png" style="vertical-align:baseline;"/> means won Super Bowl that year. Click on the team name below the chart to show/hide the graph. Hover to reveal the stats. </p>
+      <p>Charting <strong>how many points the team allowed</strong> in each game. <img src="assets/img/superbowl.png" style="vertical-align:baseline;"/> means won Super Bowl that year. Toggle on the team name below the chart to show/hide. Hover to reveal the stats. </p>
 
       <div id="container2" style="min-width: 400px; height: 700px; margin: 0 auto"></div>
 
 
+        <hr>
 
+        <h2>List of Super Bowl winners</h2>
+        <p>In the span:</p>
+        <ul>
+            <li>XXXVII  January 26, 2003    <strong>Tampa Bay Buccaneers</strong>   48–21   Oakland Raiders</li>
+            <li>XXXVIII February 1, 2004    <strong>New England Patriots</strong>   32–29   Carolina Panthers</li>
+            <li>XXXIX   February 6, 2005    <strong>New England Patriots</strong>   24–21   Philadelphia Eagles</li>
+            <li>XL  February 5, 2006    <strong>Pittsburgh Steelers</strong>    21–10   Seattle Seahawks</li>
+            <li>XLI February 4, 2007    <strong>Indianapolis Colts</strong> 29–17   Chicago Bears</li>
+            <li>XLII    February 3, 2008    <strong>New York Giants</strong>    17–14   New England Patriots</li>
+            <li>XLIII   February 1, 2009    <strong>Pittsburgh Steelers</strong> 27–23  Arizona Cardinals</li>
+            <li>XLIV    February 7, 2010    <strong>New Orleans Saints</strong> 31–17   Indianapolis Colts</li>
+            <li>XLV February 6, 2011    <strong>Green Bay Packers</strong>  31–25   Pittsburgh Steelers</li>
+            <li>XLVI    February 5, 2012    <strong>New York Giants</strong>    21–17   New England Patriots</li>
+            <li>XLVII   February 3, 2013    <strong>?</strong> at Mercedes-Benz Superdome, New Orleans, Louisiana</li>
+        </ul>
 
       <hr>
       <footer>
@@ -136,7 +152,7 @@ $(function () {
                 enabled: false
             },
             colors: [
-                '#8DD3C7', '#FFFFB3', '#BEBADA', '#FB8072', '#80B1D3', '#FDB462', '#B3DE69', '#FCCDE5', '#D9D9D9', '#BC80BD', '#CCEBC5', '#FFED6F'
+                '#8DD3C7', '#FFFFB3', '#BEBADA', '#FB8072', '#80B1D3', '#FDB462', '#B3DE69', '#FCCDE5', '#D9D9D9', '#BC80BD', '#CCEBC5', '#FFED6F','#8DD3C7', '#FFFFB3', '#BEBADA', '#FB8072', '#80B1D3', '#FDB462', '#cc0000', '#B3DE69', '#FCCDE5', '#D9D9D9', '#BC80BD', '#CCEBC5', '#FFED6F','#8DD3C7', '#FFFFB3', '#BEBADA', '#FB8072', '#80B1D3', '#FDB462','#B3DE69', '#FCCDE5', '#D9D9D9', '#BC80BD', '#CCEBC5', '#FFED6F'
             ],
             xAxis: {
                 categories: ['2002', '2003', '2004', '2005', '2006', '2007', '2008', '2009', '2010', '2011', '2012']
@@ -436,7 +452,7 @@ $(function () {
                 enabled: false
             },
             colors: [
-                '#8DD3C7', '#FFFFB3', '#BEBADA', '#FB8072', '#80B1D3', '#FDB462', '#B3DE69', '#FCCDE5', '#D9D9D9', '#BC80BD', '#CCEBC5', '#FFED6F'
+                '#8DD3C7', '#FFFFB3', '#BEBADA', '#FB8072', '#80B1D3', '#FDB462', '#B3DE69', '#FCCDE5', '#D9D9D9', '#BC80BD', '#CCEBC5', '#FFED6F','#8DD3C7', '#FFFFB3', '#BEBADA', '#FB8072', '#80B1D3', '#FDB462', '#cc0000', '#B3DE69', '#FCCDE5', '#D9D9D9', '#BC80BD', '#CCEBC5', '#FFED6F','#8DD3C7', '#FFFFB3', '#BEBADA', '#FB8072', '#80B1D3', '#FDB462','#B3DE69', '#FCCDE5', '#D9D9D9', '#BC80BD', '#CCEBC5', '#FFED6F'
             ],
             xAxis: {
                 categories: ['2002', '2003', '2004', '2005', '2006', '2007', '2008', '2009', '2010', '2011', '2012']
